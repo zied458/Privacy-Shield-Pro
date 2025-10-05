@@ -1,6 +1,6 @@
 # Enhanced Privacy & Security Dashboard
 
-A comprehensive **Chrome extension** that provides real-time privacy protection by **blocking trackers** and offering **detailed security insights**—all processed locally on your device.
+A comprehensive **Chrome extension** that provides real-time privacy protection by **blocking trackers** and offering **detailed security insights** all processed locally on your device.
 ---
 
 ## ✨ Features
@@ -43,7 +43,7 @@ This extension uses Chrome’s **Declarative Net Request (DNR)** API to block kn
 - LinkedIn tracking pixels  
 …and many more.
 
-> The blocking rules live in `rules.json` (static DNR rules). User allow/block lists can be applied as **dynamic** rules.
+
 
 ---
 
