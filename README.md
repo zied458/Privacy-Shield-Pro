@@ -17,7 +17,10 @@ A comprehensive **Chrome extension** that provides real-time privacy protection 
 - **Total Blocked**: Monthly counter (auto-reset on the 1st).
 - **Current Site Analysis**: Real-time tracker detection summary.
 - **Cookie Management**: One-click to clear **site-specific cookies**.
-
+<p align="center">
+  <img src="./assets/dashboard.png" alt="Extension dashboard capture" width="900">
+ 
+</p>
 ### ⚙️ Advanced Options
 - **Selective Blocking** by category:
   - **Analytics**: Google Analytics, Tag Manager, Segment, etc.
