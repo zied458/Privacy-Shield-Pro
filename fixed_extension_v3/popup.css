@@ -1,0 +1,457 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 380px;
+  min-height: 500px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+}
+
+.header {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 15px 20px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.status-section {
+  background: white;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.status-item:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  font-weight: 500;
+  color: #555;
+  font-size: 14px;
+}
+
+.status-value {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.status-value.protected {
+  color: #27ae60;
+}
+
+.status-value.unprotected {
+  color: #e74c3c;
+}
+
+.toggle-btn {
+  width: calc(100% - 40px);
+  margin: 15px 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn.enabled {
+  background: #e74c3c;
+  color: white;
+}
+
+.toggle-btn.disabled {
+  background: #27ae60;
+  color: white;
+}
+
+.toggle-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.analysis-section {
+  background: white;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.analysis-section h3 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.analysis-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.analysis-item:last-child {
+  margin-bottom: 0;
+}
+
+.analysis-value {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.grade-a { color: #27ae60; }
+.grade-b { color: #f39c12; }
+.grade-c { color: #e67e22; }
+.grade-d { color: #e74c3c; }
+.grade-f { color: #c0392b; }
+
+.actions-section {
+  background: white;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.action-btn {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #f8f9fa;
+  color: #495057;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-btn:last-child {
+  margin-bottom: 0;
+}
+
+.action-btn:hover {
+  background: #e9ecef;
+  border-color: #adb5bd;
+}
+
+/* New Features Styling */
+.new-features-section {
+  background: white;
+}
+
+.feature-tab-container {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.feature-tab {
+  flex: 1;
+  padding: 12px 8px;
+  border: none;
+  background: #f8f9fa;
+  color: #6c757d;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.feature-tab.active {
+  background: white;
+  color: #495057;
+  border-bottom-color: #667eea;
+}
+
+.feature-tab:hover {
+  background: #e9ecef;
+}
+
+.feature-content {
+  display: none;
+  padding: 15px 20px;
+}
+
+.feature-content.active {
+  display: block;
+}
+
+.feature-content h4 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.feature-content h5 {
+  margin: 12px 0 8px 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+}
+
+/* Data Breach Monitor Styling */
+.email-input-container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+#email-input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.small-btn {
+  padding: 8px 12px;
+  border: 1px solid #667eea;
+  border-radius: 4px;
+  background: #667eea;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.small-btn:hover {
+  background: #5a6fd8;
+}
+
+.monitored-list {
+  margin-bottom: 12px;
+}
+
+.monitored-email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.monitored-email:last-child {
+  margin-bottom: 0;
+}
+
+.remove-email {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alerts-container {
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.breach-alert {
+  padding: 8px 10px;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  font-size: 11px;
+  color: #856404;
+}
+
+.breach-alert.critical {
+  background: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+/* Site Permissions Styling */
+.permissions-list {
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.permission-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  font-size: 11px;
+}
+
+.permission-item:last-child {
+  margin-bottom: 0;
+}
+
+.permission-name {
+  font-weight: 500;
+  color: #495057;
+}
+
+.permission-status {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.permission-status.granted {
+  background: #d4edda;
+  color: #155724;
+}
+
+.permission-status.denied {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.revoke-permission {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 10px;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+.revoke-permission:hover {
+  background: #e74c3c;
+  color: white;
+}
+
+.site-permission-group {
+  margin-bottom: 8px;
+  padding: 6px 8px;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.site-name {
+  font-weight: 600;
+  font-size: 11px;
+  color: #495057;
+  margin-bottom: 4px;
+}
+
+.site-permissions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.site-permission-tag {
+  font-size: 9px;
+  padding: 2px 4px;
+  background: #e9ecef;
+  border-radius: 8px;
+  color: #6c757d;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Advanced Section Styles */
+.advanced-section {
+  margin-top: 15px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 15px;
+  background: white;
+  padding: 15px 20px;
+}
+
+.advanced-section h3 {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.tracker-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+  color: #555;
+  gap: 8px;
+}
+
+.option-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.checkmark {
+  font-size: 12px;
+}
+
+.notification {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
